@@ -12,10 +12,20 @@ console.log(toPower(2,3));
 const toPowerArrow = (num, power) => num ** power;
 console.log(toPowerArrow(2,3));
 
+// 1. https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b
+// Cat years, Dog years
+function humanYearsCatYearsDogYears (humanYears, catYears, dogYears) {
+  if (humanYears == 1) {
+      catYears = 15;
+      dogYears = 15;
+  } else {
+      catYears = 15 + 9 + 4 * (humanYears - 2);
+      dogYears = 15 + 9 + 5 * (humanYears - 2);
+  }
+  return [humanYears, catYears, dogYears];
+}
+
 // 5 https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097 
 //Century From Year
-// The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
-// Task: Given a year, return the century it is in.
-// Examples 1705 --> 18 1900 --> 19 1601 --> 17 2000 --> 20 2742 --> 28
 
 const century = year => Math.ceil(year / 100);
