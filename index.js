@@ -14,11 +14,10 @@ function humanYearsCatYearsDogYears (humanYears, catYears, dogYears) {
 }
 
 
-
 // 5 https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097 
 //Century From Year
-
 const century = year => Math.ceil(year / 100);
+
 
 // 6 https://www.codewars.com/kata/56b1f01c247c01db92000076
 // Double char
@@ -40,8 +39,6 @@ const doubleChar = (str) => {
 	arr = arr.map(num => num + num);
 	return str = arr.join('');
 }
-
-
 
 
 // Задачи по основам JavaScript (Ларичев):
