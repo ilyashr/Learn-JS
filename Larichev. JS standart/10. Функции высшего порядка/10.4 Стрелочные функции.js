@@ -15,7 +15,3 @@ console.log(powerOfThree(5));
 console.log(powerOfThree(10));
 
 console.log(power(5)(4));
-
-
-let sq = x => y + x => z + y;
-console.log(sq(2)(2)(2));
