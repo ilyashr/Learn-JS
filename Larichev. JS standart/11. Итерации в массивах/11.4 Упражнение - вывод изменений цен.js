@@ -8,6 +8,9 @@
 
 let prices = [[100, 200], [120, 100], [200, 350]];
 const result = prices
-.map(product => product[1] - product[0])
+.map((product, index, array) => {
+    console.log(product, index, array);
+  return  [1] - product[0];
+})
 .filter(price => price > 0);
 console.log(result);
